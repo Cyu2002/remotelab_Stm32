@@ -1,0 +1,434 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: C YH, HDUFUCK, LIC=CRMW3-AQTFY-LVR1I-TSTSN-E8BHH-D7F8Q
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\Desktop\remotelabb\qyf0304\MDK-ARM\qyf030.uvprojx
+Project File Date:  04/03/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'qyf030'
+assembling startup_stm32f030x8.s...
+compiling stm32f0xx_hal_msp.c...
+compiling gpio.c...
+compiling stm32f0xx_it.c...
+compiling usart.c...
+compiling tim.c...
+compiling main.c...
+..\model\DAC8830\dac8830.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\model\MAIN\mc.h(137): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(132): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(0);
+../Core/Src/main.c(133): warning:  #188-D: enumerated type mixed with another type
+  	D12_BUS_CON(0);
+../Core/Src/main.c(134): warning:  #188-D: enumerated type mixed with another type
+  	U12_BUS_CON(0);
+../Core/Src/main.c(142): warning:  #188-D: enumerated type mixed with another type
+  	SCREEN_EN(0);
+../Core/Src/main.c(144): warning:  #188-D: enumerated type mixed with another type
+  	SCREEN_EN(1);
+../Core/Src/main.c(84): warning:  #550-D: variable "len"  was set but never used
+  	int len,flag0=0;
+../Core/Src/main.c: 8 warnings, 0 errors
+compiling stm32f0xx_hal_tim.c...
+compiling stm32f0xx_hal_i2c_ex.c...
+compiling stm32f0xx_hal_rcc_ex.c...
+compiling stm32f0xx_hal.c...
+compiling stm32f0xx_hal_rcc.c...
+compiling stm32f0xx_hal_tim_ex.c...
+compiling stm32f0xx_hal_dma.c...
+compiling stm32f0xx_hal_i2c.c...
+compiling stm32f0xx_hal_gpio.c...
+compiling stm32f0xx_hal_pwr_ex.c...
+compiling stm32f0xx_hal_cortex.c...
+compiling stm32f0xx_hal_pwr.c...
+compiling stm32f0xx_hal_flash.c...
+compiling stm32f0xx_hal_flash_ex.c...
+compiling system_stm32f0xx.c...
+compiling stm32f0xx_hal_exti.c...
+compiling ad9833.c...
+..\model\ad9833\ad9833.c(45): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_7,(date >>(7-j))&1);
+..\model\ad9833\ad9833.c(46): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_8,0);
+..\model\ad9833\ad9833.c(48): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_8,1);
+..\model\ad9833\ad9833.c(82): warning:  #177-D: variable "j"  was declared but never referenced
+  	unsigned char i =0,j = 0;
+..\model\ad9833\ad9833.c: 4 warnings, 0 errors
+compiling stm32f0xx_hal_uart_ex.c...
+compiling adf4002.c...
+..\model\adf4002\adf4002.c(30): warning:  #188-D: enumerated type mixed with another type
+  	 SCL(0);
+..\model\adf4002\adf4002.c(31): warning:  #188-D: enumerated type mixed with another type
+  	 SDA(0);
+..\model\adf4002\adf4002.c(32): warning:  #188-D: enumerated type mixed with another type
+  	 LE(0);
+..\model\adf4002\adf4002.c(45): warning:  #188-D: enumerated type mixed with another type
+  	SCL(0);
+..\model\adf4002\adf4002.c(46): warning:  #188-D: enumerated type mixed with another type
+    LE(0);  
+..\model\adf4002\adf4002.c(52): warning:  #188-D: enumerated type mixed with another type
+        SDA(1);
+..\model\adf4002\adf4002.c(56): warning:  #188-D: enumerated type mixed with another type
+         SDA(0);
+..\model\adf4002\adf4002.c(59): warning:  #188-D: enumerated type mixed with another type
+      SCL(1);
+..\model\adf4002\adf4002.c(63): warning:  #188-D: enumerated type mixed with another type
+      SCL(0);
+..\model\adf4002\adf4002.c(66): warning:  #188-D: enumerated type mixed with another type
+    SDA(0);
+..\model\adf4002\adf4002.c(68): warning:  #188-D: enumerated type mixed with another type
+    LE(0);
+..\model\adf4002\adf4002.c(70): warning:  #188-D: enumerated type mixed with another type
+    LE(1);
+..\model\adf4002\adf4002.c: 12 warnings, 0 errors
+compiling stm32f0xx_hal_uart.c...
+compiling util.c...
+..\model\UTIL\util.c(219): warning:  #1-D: last line of file ends without a newline
+  }
+..\model\UTIL\util.c: 1 warning, 0 errors
+compiling crc8.c...
+..\model\I2C\crc8.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\model\I2C\crc8.c: 1 warning, 0 errors
+compiling delay.c...
+..\model\DELAY\delay.c(70): warning:  #1-D: last line of file ends without a newline
+  // Delay_us doesn't call Delay_ticks, in order to reduce a little of CPU time.
+..\model\DELAY\delay.c: 1 warning, 0 errors
+compiling softi2c.c...
+..\model\I2C\softi2c.c(258): warning:  #177-D: variable "waitTime"  was declared but never referenced
+    uint16_t waitTime = 0;
+..\model\I2C\softi2c.c(377): warning:  #1-D: last line of file ends without a newline
+  }
+..\model\I2C\softi2c.c: 2 warnings, 0 errors
+compiling ch423.c...
+compiling ch4230.c...
+compiling dac8830.c...
+..\model\DAC8830\dac8830.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\model\DAC8830\dac8830.c(21): warning:  #188-D: enumerated type mixed with another type
+  	 SPI_LE(1);
+..\model\DAC8830\dac8830.c(22): warning:  #188-D: enumerated type mixed with another type
+  	 SPI_CLK(0);
+..\model\DAC8830\dac8830.c(23): warning:  #188-D: enumerated type mixed with another type
+  	 SPI_SDI(0);
+..\model\DAC8830\dac8830.c(28): warning:  #188-D: enumerated type mixed with another type
+  	SPI_LE(0);
+..\model\DAC8830\dac8830.c(32): warning:  #188-D: enumerated type mixed with another type
+  			SPI_SDI(1);
+..\model\DAC8830\dac8830.c(35): warning:  #188-D: enumerated type mixed with another type
+  			SPI_SDI(0);
+..\model\DAC8830\dac8830.c(39): warning:  #188-D: enumerated type mixed with another type
+  		SPI_CLK(1);
+..\model\DAC8830\dac8830.c(41): warning:  #188-D: enumerated type mixed with another type
+  		SPI_CLK(0);
+..\model\DAC8830\dac8830.c(43): warning:  #188-D: enumerated type mixed with another type
+  	SPI_LE(1);
+..\model\DAC8830\dac8830.c: 10 warnings, 0 errors
+compiling mc.c...
+..\model\DAC8830\dac8830.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\model\MAIN\mc.h(137): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\model\MAIN\mc.c(25): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(26): warning:  #188-D: enumerated type mixed with another type
+  	D12_BUS_CON(1);
+..\model\MAIN\mc.c(27): warning:  #188-D: enumerated type mixed with another type
+  	U12_BUS_CON(1);
+..\model\MAIN\mc.c(69): warning:  #188-D: enumerated type mixed with another type
+  				U5_BUS_CON(0);
+..\model\MAIN\mc.c(70): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(71): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);
+..\model\MAIN\mc.c(81): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(176): warning:  #188-D: enumerated type mixed with another type
+  			U5_BUS_CON(0);
+..\model\MAIN\mc.c(177): warning:  #188-D: enumerated type mixed with another type
+  			D12_BUS_CON(0);
+..\model\MAIN\mc.c(178): warning:  #188-D: enumerated type mixed with another type
+  			U12_BUS_CON(0);
+..\model\MAIN\mc.c(196): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(197): warning:  #188-D: enumerated type mixed with another type
+  	D12_BUS_CON(1);
+..\model\MAIN\mc.c(198): warning:  #188-D: enumerated type mixed with another type
+  	U12_BUS_CON(1);
+..\model\MAIN\mc.c(218): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0|GPIO_PIN_1,1);
+..\model\MAIN\mc.c(219): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,0);//IN
+..\model\MAIN\mc.c(240): warning:  #188-D: enumerated type mixed with another type
+  			U5_BUS_CON(0);
+..\model\MAIN\mc.c(241): warning:  #188-D: enumerated type mixed with another type
+  			D12_BUS_CON(0);
+..\model\MAIN\mc.c(242): warning:  #188-D: enumerated type mixed with another type
+  			U12_BUS_CON(0);
+..\model\MAIN\mc.c(249): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(250): warning:  #188-D: enumerated type mixed with another type
+  	D12_BUS_CON(1);
+..\model\MAIN\mc.c(251): warning:  #188-D: enumerated type mixed with another type
+  	U12_BUS_CON(1);
+..\model\MAIN\mc.c(263): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(264): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(265): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(289): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(290): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(291): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(310): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(311): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(312): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(347): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(348): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(349): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(369): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(371): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(373): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(398): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(400): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(402): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(418): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(419): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(420): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(441): warning:  #188-D: enumerated type mixed with another type
+  			 	U5_BUS_CON(0);
+..\model\MAIN\mc.c(442): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(443): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);
+..\model\MAIN\mc.c(454): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(455): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(456): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(485): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(486): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(487): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(498): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(499): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(500): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN				
+..\model\MAIN\mc.c(526): warning:  #188-D: enumerated type mixed with another type
+  					U5_BUS_CON(0);
+..\model\MAIN\mc.c(527): warning:  #188-D: enumerated type mixed with another type
+  					D12_BUS_CON(0);
+..\model\MAIN\mc.c(528): warning:  #188-D: enumerated type mixed with another type
+  					U12_BUS_CON(0);
+..\model\MAIN\mc.c(535): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(536): warning:  #188-D: enumerated type mixed with another type
+  	D12_BUS_CON(1);
+..\model\MAIN\mc.c(537): warning:  #188-D: enumerated type mixed with another type
+  	U12_BUS_CON(1);
+..\model\MAIN\mc.c(543): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(544): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(545): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(572): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(573): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(574): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(592): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(593): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(594): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN		
+..\model\MAIN\mc.c(609): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(610): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(611): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(617): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(618): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(619): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_C,1);//IN
+..\model\MAIN\mc.c(633): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(634): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(635): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_C,1);//IN
+..\model\MAIN\mc.c(685): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(686): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(687): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(697): warning:  #188-D: enumerated type mixed with another type
+  				U5_BUS_CON(0);
+..\model\MAIN\mc.c(698): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(699): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);
+..\model\MAIN\mc.c(706): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(707): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(708): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_C,1);//IN
+..\model\MAIN\mc.c(737): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_B,1);
+..\model\MAIN\mc.c(738): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(739): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN		
+..\model\MAIN\mc.c(747): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(748): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(749): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOA,PIN_C,1);//IN
+..\model\MAIN\mc.c(764): warning:  #188-D: enumerated type mixed with another type
+  				U5_BUS_CON(0);
+..\model\MAIN\mc.c(765): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(766): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);
+..\model\MAIN\mc.c(776): warning:  #188-D: enumerated type mixed with another type
+  		U5_BUS_CON(1);
+..\model\MAIN\mc.c(777): warning:  #188-D: enumerated type mixed with another type
+  		D12_BUS_CON(1);
+..\model\MAIN\mc.c(778): warning:  #188-D: enumerated type mixed with another type
+  		U12_BUS_CON(1);
+..\model\MAIN\mc.c(782): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(783): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_A,1);
+..\model\MAIN\mc.c(784): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_C,1);//IN
+..\model\MAIN\mc.c(833): warning:  #188-D: enumerated type mixed with another type
+  				U5_BUS_CON(0);
+..\model\MAIN\mc.c(834): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(835): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);
+..\model\MAIN\mc.c(845): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(846): warning:  #188-D: enumerated type mixed with another type
+  	D12_BUS_CON(1);
+..\model\MAIN\mc.c(847): warning:  #188-D: enumerated type mixed with another type
+  	U12_BUS_CON(1);
+..\model\MAIN\mc.c(918): warning:  #188-D: enumerated type mixed with another type
+  				U5_BUS_CON(0);
+..\model\MAIN\mc.c(919): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(920): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);
+..\model\MAIN\mc.c(929): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(979): warning:  #188-D: enumerated type mixed with another type
+  				U5_BUS_CON(0);
+..\model\MAIN\mc.c(980): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(981): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);
+..\model\MAIN\mc.c(988): warning:  #188-D: enumerated type mixed with another type
+  	U5_BUS_CON(1);
+..\model\MAIN\mc.c(989): warning:  #188-D: enumerated type mixed with another type
+  	D12_BUS_CON(1);
+..\model\MAIN\mc.c(990): warning:  #188-D: enumerated type mixed with another type
+  	U12_BUS_CON(1);
+..\model\MAIN\mc.c(997): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_B,0);
+..\model\MAIN\mc.c(998): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_A,0);
+..\model\MAIN\mc.c(999): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,PIN_C,0);//IN
+..\model\MAIN\mc.c(1031): warning:  #188-D: enumerated type mixed with another type
+  				U5_BUS_CON(0);
+..\model\MAIN\mc.c(1032): warning:  #188-D: enumerated type mixed with another type
+  				D12_BUS_CON(0);
+..\model\MAIN\mc.c(1033): warning:  #188-D: enumerated type mixed with another type
+  				U12_BUS_CON(0);				
+..\model\MAIN\mc.c: 126 warnings, 0 errors
+linking...
+Program Size: Code=29936 RO-data=984 RW-data=128 ZI-data=2792  
+FromELF: creating hex file...
+"qyf030\qyf030.axf" - 0 Error(s), 165 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.1.pack
+                Keil.STM32F0xx_DFP.2.1.1
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_qyf030
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.1\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:31
+</pre>
+</body>
+</html>
